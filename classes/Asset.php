@@ -1,5 +1,4 @@
 <?php
-
 include_once('Constants.php');
 include_once('Utility.php');
 
@@ -220,6 +219,16 @@ class Asset{
     }
     
     public function UploadContent($mediaContext, $file_name, $tmp_name){
+        set_time_limit(0);
+        $locs = $this->ListLocators();
+        foreach($locs as $loc){
+            $acc = $this->context->getAccessPolicyReference($loc->accessPolicyId);
+            $acc->Get();
+            if($acc->permissions == AccessPolicyPermission::$WRITE){
+                $loc->Delete();
+                $acc->Delete();
+            }
+        }
         $accessPolicy = $mediaContext->getAccessPolicyReference();
         $accessPolicy->name = 'uploadpolicy';
         $accessPolicy->durationInMinutes = 180;
