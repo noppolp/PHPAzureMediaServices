@@ -27,6 +27,12 @@
     <Compile Include="phpinfo.php" />
     <Compile Include="README.md" />
     <Compile Include="uploadContent.php" />
+    <Compile Include="upload_file\index.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="upload_file\upload.php">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Web.config" />
     <Compile Include=".git\config" />
     <Compile Include=".git\description" />
@@ -230,5 +236,18 @@
     <Folder Include=".git\refs\remotes\origin" />
     <Folder Include="flowplayer\skin" />
     <Folder Include="flowplayer\skin\img" />
+    <Folder Include="upload_file\" />
+    <Folder Include="upload_file\upload\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="upload_file\ajax_upload.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="upload_file\jquery-1.6.3.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="upload_file\upload\sample.txt">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
 </Project>
