@@ -17,8 +17,12 @@ class RequestHeadersValues{
     public static $Authorization = 'Bearer %s';
     
     public static $BlobXMsVersion = '2011-08-18';
-    public static $BlobXMsDate = '2011-01-17';
     public static $BlobXMsBlobType = 'BlockBlob';
+    
+    public static function GetBlobXMsDate(){
+        return gmdate("D, d M Y H:i:s") . ' GMT'; 
+        //return date('Y-m-d');
+    }
 }
 
 class RequestContentType{

@@ -31,7 +31,7 @@ if (!empty($_POST)){
         $locator->Create();
         $asset = $mediaContext->getAssetReference($assetId);
         $asset->Get();
-        $asset->UploadContent($mediaContext, $_FILES['blobfile']['name'], $_FILES['blobfile']['tmp_name']);
+        $asset->UploadContent($_FILES['blobfile']['name'], $_FILES['blobfile']['tmp_name']);
         $asset->Publish();
         
         echo '<br/> Upload Completed !';

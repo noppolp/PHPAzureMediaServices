@@ -55,7 +55,8 @@ class Asset{
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
-        }catch(HttpException $ex){
+        }
+        catch(HttpException $ex){
             echo $ex;
         }
     }
@@ -72,7 +73,8 @@ class Asset{
             if($r->getResponseCode() != 204){
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
-        }catch(HttpException $ex){
+        }
+        catch(HttpException $ex){
             echo $ex;
         }
     }
@@ -95,7 +97,8 @@ class Asset{
             if($r->getResponseCode() != 204){
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
-        }catch(HttpException $ex){
+        }
+        catch(HttpException $ex){
             echo $ex;
         }
     }
@@ -114,7 +117,8 @@ class Asset{
             if($r->getResponseCode() != 204){
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
-        }catch(HttpException $ex){
+        }
+        catch(HttpException $ex){
             echo $ex;
         }
     }
@@ -142,7 +146,8 @@ class Asset{
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
-        }catch(HttpException $ex){
+        }
+        catch(HttpException $ex){
             echo $ex;
         }
     }
@@ -178,76 +183,22 @@ class Asset{
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
-        }catch(HttpException $ex){
+        }
+        catch(HttpException $ex){
             echo $ex;
         }
         return $locators;
     }
     
-    public function ListAccessPolicies(){
-        $accessPolicies = array();
-        $listUri = sprintf('%s/Assets(\'%s\')/AccessPolicies', $this->context->wamsEndpoint, $this->id);
-        $r = new HttpRequest($listUri, HttpRequest::METH_GET);
-        $r->addHeaders(array(RequestHeaders::$DataServiceVersion => RequestHeadersValues::$DataServiceVersion,
-                        RequestHeaders::$MaxDataServiceVersion => RequestHeadersValues::$MaxDataServiceVersion,
-                        RequestHeaders::$XMsVersion => RequestHeadersValues::$XMsVersion,
-                        RequestHeaders::$Authorization => sprintf(RequestHeadersValues::$Authorization, $this->context->getAccessToken()),
-                        RequestHeaders::$Accept => RequestContentType::$JSON));
-        try{
-            $r->send();
-            if($r->getResponseCode() == 200){
-                $objects = json_decode($r->getResponseBody(), true);
-                $i = 0;
-                $results = $objects['d']['results'];
-                foreach($results as $object){
-                    $accessPolicy = $this->context->getAccessPolicyReference();
-                    $accessPolicy->id = $object['Id'];
-                    $accessPolicy->durationInMinutes = $object['DurationInMinutes'];
-                    $accessPolicy->permissions = $object['Permissions'];
-                    $accessPolicy->created = Utility::DotNetJSONDateToTime($object['Created']);
-                    $accessPolicy->lastModified = Utility::DotNetJSONDateToTime($object['LastModified']);
-                    $accessPolicy->name = $object['Name'];
-                    $accessPolicies[$i++] = $accessPolicy;
-                }
-            }else{
-                echo $r->getResponseCode() . ' ' . $r->getResponseBody();
-            }
-        }catch(HttpException $ex){
-            echo $ex;
-        }
-        return $accessPolicies;
-    }
-    
-    public function UploadContent($mediaContext, $file_name, $tmp_name){
+    public function UploadContent($file_name, $tmp_name){
         set_time_limit(0);
-        $locs = $this->ListLocators();
-        foreach($locs as $loc){
-            $acc = $this->context->getAccessPolicyReference($loc->accessPolicyId);
-            $acc->Get();
-            if($acc->permissions == AccessPolicyPermission::$WRITE){
-                $loc->Delete();
-                $acc->Delete();
-            }
-        }
-        $accessPolicy = $mediaContext->getAccessPolicyReference();
-        $accessPolicy->name = 'uploadpolicy';
-        $accessPolicy->durationInMinutes = 180;
-        $accessPolicy->permissions = AccessPolicyPermission::$WRITE;
-        $accessPolicy->Create();
-        
-        $locator = $mediaContext->getLocatorReference();
-        $locator->assetId = $this->id;
-        $locator->accessPolicyId = $accessPolicy->id;
-        $locator->startTime = time() - (5 * 60);
-        $locator->type = LocatorType::$SAS;
-        $locator->Create();
-        
-        $uri = $locator->path;
+
+        $uri = $this->GetWriteAccessUri(180);
         $newUri = Utility::GetFileUrl($uri, $file_name);
         $r = new HttpRequest($newUri, HttpRequest::METH_PUT);
         $r->addHeaders(array(RequestHeaders::$ContentType => RequestContentType::$BLOB,
                         RequestHeaders::$XMsVersion => RequestHeadersValues::$BlobXMsVersion,
-                        RequestHeaders::$XMsDate => RequestHeadersValues::$BlobXMsDate,
+                        RequestHeaders::$XMsDate => RequestHeadersValues::GetBlobXMsDate(),
                         RequestHeaders::$XMsBlobType => RequestHeadersValues::$BlobXMsBlobType));
         $r->setPutFile($tmp_name);
         try{
@@ -255,14 +206,38 @@ class Asset{
             if($r->getResponseCode() != 201){
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
-        }catch(HttpException $ex){
+        }
+        catch(HttpException $ex){
             echo $ex;
         }
         
-        $locator->Delete();
-        $accessPolicy->Delete();
+        $this->DeleteWriteAccessPolicy();
     }
     
+    public function UploadLargeContent($file_name, $tmp_name){
+        
+    }
+    
+    public function PutContentBlock($writeAccessUri, $id, $putData){
+        $blockId = base64_encode(sprintf('%06d', $id));
+        $putUri = sprintf('%s?comp=block&blockid=%s', $writeAccessUri, $blockId);
+        $r = new HttpRequest($putUri, HttpRequest::METH_POST);
+        $r->addHeaders(array(RequestHeaders::$ContentType => RequestContentType::$BLOB,
+                        RequestHeaders::$XMsVersion => RequestHeadersValues::$BlobXMsVersion,
+                        RequestHeaders::$XMsDate => RequestHeadersValues::GetBlobXMsDate()));
+        $r->setPutData($putData);
+        try
+        {
+        	$r->send();
+            if($r->getResponseCode() != 201){
+                echo $r->getResponseCode() . ' ' . $r->getResponseBody();
+            }
+        }
+        catch(HttpException $ex){
+            echo $ex;
+        }
+    }
+
     public function ListAssetFiles(){
         $assetFiles = array();
         $listUri = sprintf('%sAssets(\'%s\')/Files', $this->context->wamsEndpoint, $this->id);
@@ -299,11 +274,44 @@ class Asset{
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
-        }catch(HttpException $ex){
+        }
+        catch(HttpException $ex){
             echo $ex;
         }
         return $assetFiles;
     }
+
+    public function GetWriteAccessUri($durationInMinutes){
+        $this->DeleteWriteAccessPolicy();
+        $accessPolicy = $this->context->getAccessPolicyReference();
+        $accessPolicy->name = 'uploadpolicy';
+        $accessPolicy->durationInMinutes = $durationInMinutes;
+        $accessPolicy->permissions = AccessPolicyPermission::$WRITE;
+        $accessPolicy->Create();
+
+        $locator = $this->context->getLocatorReference();
+        $locator->assetId = $this->id;
+        $locator->accessPolicyId = $accessPolicy->id;
+        $locator->startTime = time() - (5 * 60);
+        $locator->type = LocatorType::$SAS;
+        $locator->Create();
+        if($locator){
+            return $locator->path;
+        }
+    }
+
+    public function DeleteWriteAccessPolicy(){
+        $locs = $this->ListLocators();
+        foreach($locs as $loc){
+            $acc = $this->context->getAccessPolicyReference($loc->accessPolicyId);
+            $acc->Get();
+            if($acc->permissions == AccessPolicyPermission::$WRITE){
+                $loc->Delete();
+                $acc->Delete();
+            }
+        }
+    }
+
 }
 
 class AssetState{
