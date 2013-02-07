@@ -1,19 +1,40 @@
+<form id="gbForm" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
+	Asset Id: <input type="text" id="AssetIdTextBox" name="AssetIdTextBox" class="field" size="50"/>
+	<input type="file" name="blobfile" id="blobfile" size="16" value="" />
+	<input type="submit" value="Upload" />
+</form>
+
 <?php
-//require_once '/classes/MediaServiceContext.php';
+//require_once 'init.php';
 
-//$accountName = 'noppolmedia';
-//$accountKey = 'qhWqMa04+fQcI9MI4iGKiUph7m/LKus9EJwUHq6tNFk=';
-//$storageAccountName = 'noppolpstorage';
-//$storageAccountKey = 'LJuxLFsD9/4igqJvLQkYDerYQImZVG6KCdigRwwczWrRbQBvaQuw9rziahn3QXhrTjixXZ7CpRTMO8zq18BmTg==';
-//$mediaContext = new MediaServiceContext($accountName, $accountKey, $storageAccountName, $storageAccountKey);
-//$mediaContext->checkForRedirection();
+//$assetId = 'nb:cid:UUID:0d19d391-2fb3-4cc0-9b54-311207dd7eb3';
+//$asset = $mediaContext->getAssetReference($assetId);
+//$asset->Get();
+//echo $asset->GetStorageContainerName();
+if (!empty($_POST)){
+	echo 'POST ';
+	if(is_uploaded_file($_FILES['blobfile']['tmp_name'])){
+		echo 'FILE ';
+		$filePointer = fopen($_FILES['blobfile']['tmp_name'], 'rb');
+		$fileData = fread($filePointer, 1024);
+		$blobContainer = 'asset-24a54809-cd31-432a-b020-4af8e11a3aad';
+		$blobRestProxy->createBlobBlock($blobContainer, '6.wmv', 1, $fileData);
+	}
+}else
+{
+	echo 'NO POST';
+}
 
-$padInt = sprintf('%06d', 12);
-echo $padInt;
-echo '<br/>' . base64_encode($padInt);
-
-echo '<br/>' . gmdate("D, d M Y H:i:s") . ' GMT';
+//echo $asset->GetReadAccessUriByFileName('6.wmv');
+//$blobContainer = 'asset-24a54809-cd31-432a-b020-4af8e11a3aad';
+//$blobList = $blobRestProxy->listBlobBlocks($blobContainer, '6.wmv');
+//$ucBlocks = $blobList->getUncommittedBlocks();
+//echo '<br/>';
+//foreach ($ucBlocks as $block)
+//{
+//	echo $block;
+//}
+$i = 5000;
+$blockId = str_pad($i, 5, "0", STR_PAD_LEFT);
+echo $blockId;
 ?>
-DEBUG
-DEBUG
-Hello World

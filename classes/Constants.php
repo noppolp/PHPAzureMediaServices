@@ -29,5 +29,6 @@ class RequestContentType{
     public static $JSON = 'application/json;odata=verbose';
     public static $ATOM = 'application/atom+xml';
     public static $BLOB = 'application/octet-stream';
+    public static $UTF8 = 'text/plain; charset=UTF-8';
 }
 ?>

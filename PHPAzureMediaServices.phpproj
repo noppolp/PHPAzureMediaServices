@@ -17,6 +17,1977 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include=".user.ini" />
+    <Compile Include="classes\vendor\autoload.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\composer\autoload_classmap.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\composer\autoload_namespaces.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\composer\autoload_real.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\composer\ClassLoader.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\composer\include_paths.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\build\ChannelManager.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\Defaults.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\examples\Client\Client.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\examples\Client\CloudStorageService.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\examples\Client\CloudSubscription.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\examples\Client\CloudTable.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\examples\Client\ErrorMessages.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\examples\Client\WindowsAzureErrorCodes.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\examples\tasklist\index.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\package.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\framework\BlobServiceRestProxyTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\framework\FiddlerFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\framework\QueueServiceRestProxyTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\framework\RestProxyTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\framework\ServiceBusRestProxyTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\framework\ServiceManagementRestProxyTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\framework\ServiceRestProxyTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\framework\TableServiceRestProxyTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\framework\TestResources.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\framework\VirtualFileSystem.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Blob\BlobServiceFunctionalTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Blob\BlobServiceFunctionalTestData.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Blob\BlobServiceIntegrationTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Blob\FunctionalTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Blob\IntegrationTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Queue\FunctionalTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Queue\IntegrationTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Queue\QueueServiceFunctionalOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Queue\QueueServiceFunctionalParameterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Queue\QueueServiceFunctionalTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Queue\QueueServiceFunctionalTestData.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Queue\QueueServiceIntegrationTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\ServiceBus\BrokerPropertiesMapperTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\ServiceBus\CustomPropertiesMapperTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\ServiceBus\IntegrationTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\ServiceBus\ScenarioTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\ServiceBus\ServiceBusIntegrationTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\ServiceBus\ServiceBusQueueTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\ServiceBus\ServiceBusTopicTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\ServiceBus\WrapTokenManagerTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\Enums\ConcurType.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\Enums\MutatePivot.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\Enums\OpType.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\FunctionalTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\IntegrationTestBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\Models\BatchWorkerConfig.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\Models\FakeTableInfoEntry.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\TableServiceFunctionalOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\TableServiceFunctionalParametersTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\TableServiceFunctionalQueryTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\TableServiceFunctionalTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\TableServiceFunctionalTestData.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\TableServiceFunctionalTestUtils.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\TableServiceIntegrationTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\mock\WindowsAzure\Common\Internal\Authentication\SharedKeyAuthSchemeMock.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\mock\WindowsAzure\Common\Internal\Authentication\StorageAuthSchemeMock.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\mock\WindowsAzure\Common\Internal\Authentication\TableSharedKeyLiteAuthSchemeMock.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\mock\WindowsAzure\Common\Internal\Filters\SimpleFilterMock.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\BlobRestProxyTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\AccessConditionTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\AccessPolicyTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\AcquireLeaseOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\AcquireLeaseResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\BlobBlockTypeTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\BlobPrefixTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\BlobPropertiesTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\BlobServiceOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\BlobTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\BlobTypeTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\BlockListTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\BlockTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\CommitBlobBlocksOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\ContainerACLTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\ContainerPropertiesTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\ContainerTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\CopyBlobOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\CopyBlobResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\CreateBlobBlockOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\CreateBlobOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\CreateBlobPagesOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\CreateBlobPagesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\CreateBlobSnapshotOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\CreateBlobSnapshotResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\CreateContainerOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\DeleteBlobOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\DeleteContainerOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\GetBlobMetadataOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\GetBlobMetadataResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\GetBlobOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\GetBlobPropertiesOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\GetBlobPropertiesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\GetBlobResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\GetContainerACLResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\GetContainerPropertiesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\LeaseModeTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\ListBlobBlocksOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\ListBlobBlocksResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\ListBlobsOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\ListBlobsResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\ListContainersOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\ListContainersResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\ListPageBlobRangesOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\ListPageBlobRangesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\PageRangeTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\PublicAccessTypeTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\SetBlobMetadataOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\SetBlobMetadataResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\SetBlobPropertiesOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\SetBlobPropertiesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\SetContainerMetadataOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\SignedIdentifierTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\CloudConfigurationManagerTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Atom\AtomLinkTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Atom\CategoryTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Atom\ContentTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Atom\EntryTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Atom\FeedTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Atom\GeneratorTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Atom\PersonTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Atom\SourceTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Authentication\SharedKeyAuthSchemeTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Authentication\StorageAuthSchemeTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Authentication\TableSharedKeyLiteAuthSchemeTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\ConnectionStringParserTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\ConnectionStringSourceTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Filters\AuthenticationFilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Filters\DateFilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Filters\ExponentialRetryPolicyTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Filters\HeadersFilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Filters\WrapFilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Http\HttpCallContextTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Http\HttpClientTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Http\UrlTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\InvalidArgumentTypeExceptionTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\LoggerTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Serialization\DummyClass.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Serialization\XmlSerializerTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\ServiceBusSettingsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\ServiceManagementSettingsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\ServiceRestProxyTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\StorageServiceSettingsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\UtilitiesTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\ValidateTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Models\GetServicePropertiesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Models\LoggingTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Models\MetricsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Models\RetentionPolicyTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Models\ServicePropertiesTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\ServiceExceptionTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\ServicesBuilderTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\CreateMessageOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\CreateQueueOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\GetQueueMetadataResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\ListMessagesOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\ListMessagesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\ListQueuesOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\ListQueuesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\PeekMessagesOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\PeekMessagesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\QueueMessageTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\QueueServiceOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\QueueTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\UpdateMessageResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\WindowsAzureQueueMessageTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\QueueRestProxyTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\Internal\WrapTokenManagerTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\ActionTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\ActiveTokenTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\BrokeredMessageTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\BrokerPropertiesTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\CorrelationFilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\EmptyRuleActionTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\FalseFilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\FilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\ListOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\ListQueuesOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\ListQueuesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\ListRulesOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\ListRulesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\ListSubscriptionsOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\ListSubscriptionsResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\ListTopicsOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\ListTopicsResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\QueueDescriptionTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\QueueInfoTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\ReceiveMessageOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\RuleDescriptionTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\RuleInfoTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\SqlFilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\SqlRuleActionTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\SubscriptionDescriptionTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\SubscriptionInfoTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\TopicDescriptionTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\TopicInfoTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\TrueFilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\WrapAccessTokenResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\ServiceBusRestProxyTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\WrapRestProxyTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Internal\ServiceTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Internal\WindowsAzureServiceTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\AffinityGroupTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\AsynchronousOperationResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\ChangeDeploymentConfigurationOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\CreateAffinityGroupOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\CreateDeploymentOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\CreateStorageServiceOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\DeploymentSlotTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\DeploymentStatusTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\DeploymentTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\GetAffinityGroupPropertiesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\GetDeploymentOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\GetDeploymentResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\GetHostedServicePropertiesOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\GetHostedServicePropertiesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\GetOperationStatusResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\GetStorageServiceKeysResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\GetStorageServicePropertiesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\HostedServiceTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\InputEndpointTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\ListAffinityGroupsResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\ListHostedServicesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\ListLocationsResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\ListStorageServicesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\LocationTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\ModeTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\RoleInstanceTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\RoleTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\StorageServiceTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\UpdateServiceOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\UpgradeDeploymentOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\UpgradeStatusTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\ServiceManagementRestProxyTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\AcquireCurrentStateTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\ChunkedGoalStateDeserializerTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\CurrentStateTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\FileInputChannelTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\FileOutputChannelTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\GoalStateTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\LocalResourceTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\Protocol1RuntimeClientFactoryTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\Protocol1RuntimeClientTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\Protocol1RuntimeCurrentStateClientTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\Protocol1RuntimeGoalStateClientTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\ReleaseCurrentStateTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\RoleEnvironmentConfigurationSettingChangeTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\RoleEnvironmentDataTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\RoleEnvironmentTopologyChangeTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\RoleInstanceEndpointTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\RoleInstanceTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\RoleTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\RuntimeKernelTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\RuntimeVersionManagerTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\RuntimeVersionProtocolClientTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\XmlCurrentStateSerializerTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\XmlGoalStateDeserializerTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\XmlRoleEnvironmentDataDeserializerTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\RoleEnvironmentTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Internal\AtomReaderWriterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\BatchErrorTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\BatchOperationParameterNameTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\BatchOperationsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\BatchOperationTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\BatchOperationTypeTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\BatchResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\DeleteEntityOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\EdmTypeTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\EntityTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\Filters\BinaryFilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\Filters\ConstantFilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\Filters\FilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\Filters\PropertyNameFilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\Filters\QueryStringFilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\Filters\UnaryFilterTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\GetEntityResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\GetTableResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\InsertEntityResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\PropertyTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\QueryEntitiesOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\QueryEntitiesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\QueryTablesOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\QueryTablesResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\QueryTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\TableServiceOptionsTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\UpdateEntityResultTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\TableRestProxyTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\tests\WindowsAzureTests.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\BlobRestProxy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Internal\IBlob.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\AccessCondition.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\AccessPolicy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\AcquireLeaseOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\AcquireLeaseResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\Blob.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\BlobBlockType.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\BlobPrefix.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\BlobProperties.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\BlobServiceOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\BlobType.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\Block.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\BlockList.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\CommitBlobBlocksOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\Container.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\ContainerACL.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\ContainerProperties.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\CopyBlobOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\CopyBlobResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\CreateBlobBlockOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\CreateBlobOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\CreateBlobPagesOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\CreateBlobPagesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\CreateBlobSnapshotOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\CreateBlobSnapshotResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\CreateContainerOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\DeleteBlobOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\DeleteContainerOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\GetBlobMetadataOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\GetBlobMetadataResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\GetBlobOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\GetBlobPropertiesOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\GetBlobPropertiesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\GetBlobResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\GetContainerACLResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\GetContainerPropertiesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\LeaseMode.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\ListBlobBlocksOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\ListBlobBlocksResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\ListBlobsOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\ListBlobsResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\ListContainersOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\ListContainersResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\ListPageBlobRangesOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\ListPageBlobRangesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\PageRange.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\PageWriteOption.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\PublicAccessType.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\SetBlobMetadataOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\SetBlobMetadataResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\SetBlobPropertiesOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\SetBlobPropertiesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\SetContainerMetadataOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\SignedIdentifier.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\CloudConfigurationManager.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Atom\AtomBase.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Atom\AtomLink.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Atom\Category.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Atom\Content.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Atom\Entry.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Atom\Feed.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Atom\Generator.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Atom\Person.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Atom\Source.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Authentication\SharedKeyAuthScheme.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Authentication\StorageAuthScheme.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Authentication\TableSharedKeyLiteAuthScheme.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\ConnectionStringParser.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\ConnectionStringSource.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\FilterableService.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Filters\AuthenticationFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Filters\DateFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Filters\ExponentialRetryPolicy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Filters\HeadersFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Filters\RetryPolicy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Filters\RetryPolicyFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Filters\WrapFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Http\HttpCallContext.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Http\HttpClient.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Http\IHttpClient.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Http\IUrl.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Http\Url.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\InvalidArgumentTypeException.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\IServiceFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Logger.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Resources.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\RestProxy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Serialization\ISerializer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Serialization\XmlSerializer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\ServiceBusSettings.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\ServiceManagementSettings.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\ServiceRestProxy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\ServiceSettings.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\StorageServiceSettings.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Utilities.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Validate.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Models\GetServicePropertiesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Models\Logging.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Models\Metrics.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Models\RetentionPolicy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Models\ServiceProperties.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\ServiceException.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\ServicesBuilder.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Internal\IQueue.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\CreateMessageOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\CreateQueueOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\GetQueueMetadataResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\ListMessagesOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\ListMessagesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\ListQueuesOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\ListQueuesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\PeekMessagesOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\PeekMessagesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\Queue.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\QueueMessage.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\QueueServiceOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\UpdateMessageResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\WindowsAzureQueueMessage.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\QueueRestProxy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Internal\IServiceBus.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Internal\IWrap.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Internal\WrapTokenManager.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\Action.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\ActiveToken.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\BrokeredMessage.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\BrokerProperties.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\CorrelationFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\EmptyRuleAction.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\FalseFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\Filter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\ListOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\ListQueuesOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\ListQueuesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\ListRulesOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\ListRulesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\ListSubscriptionsOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\ListSubscriptionsResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\ListTopicsOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\ListTopicsResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\QueueDescription.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\QueueInfo.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\ReceiveMessageOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\ReceiveMode.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\RuleDescription.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\RuleInfo.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\SqlFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\SqlRuleAction.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\SubscriptionDescription.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\SubscriptionInfo.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\TopicDescription.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\TopicInfo.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\TrueFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\WrapAccessTokenResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\ServiceBusRestProxy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\WrapRestProxy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Internal\IServiceManagement.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Internal\Service.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Internal\WindowsAzureService.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\AffinityGroup.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\AsynchronousOperationResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\ChangeDeploymentConfigurationOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\CreateAffinityGroupOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\CreateDeploymentOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\CreateServiceOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\Deployment.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\DeploymentSlot.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\DeploymentStatus.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\GetAffinityGroupPropertiesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\GetDeploymentOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\GetDeploymentResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\GetHostedServicePropertiesOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\GetHostedServicePropertiesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\GetOperationStatusResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\GetStorageServiceKeysResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\GetStorageServicePropertiesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\HostedService.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\InputEndpoint.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\KeyType.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\ListAffinityGroupsResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\ListHostedServicesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\ListLocationsResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\ListStorageServicesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\Location.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\Locations.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\Mode.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\OperationStatus.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\Role.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\RoleInstance.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\StorageService.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\UpdateServiceOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\UpgradeDeploymentOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\UpgradeStatus.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\ServiceManagementRestProxy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\AcquireCurrentState.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\ChannelNotAvailableException.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\ChunkedGoalStateDeserializer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\CurrentState.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\CurrentStatus.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\FileInputChannel.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\FileOutputChannel.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\GoalState.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\ICurrentStateSerializer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\IGoalStateDeserializer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\IInputChannel.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\IOutputChannel.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\IRoleEnvironmentChange.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\IRoleEnvironmentDataDeserializer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\IRuntimeClient.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\IRuntimeClientFactory.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\IRuntimeCurrentStateClient.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\IRuntimeGoalStateClient.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\LocalResource.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\Protocol1RuntimeClient.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\Protocol1RuntimeClientFactory.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\Protocol1RuntimeCurrentStateClient.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\Protocol1RuntimeGoalStateClient.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\ReleaseCurrentState.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\Role.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\RoleEnvironmentConfigurationSettingChange.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\RoleEnvironmentData.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\RoleEnvironmentNotAvailableException.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\RoleEnvironmentTopologyChange.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\RoleInstance.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\RoleInstanceEndpoint.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\RoleInstanceStatus.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\RuntimeKernel.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\RuntimeVersionManager.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\RuntimeVersionProtocolClient.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\XmlCurrentStateSerializer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\XmlGoalStateDeserializer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\XmlRoleEnvironmentDataDeserializer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\RoleEnvironment.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Internal\AtomReaderWriter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Internal\IAtomReaderWriter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Internal\IMimeReaderWriter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Internal\ITable.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Internal\MimeReaderWriter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\BatchError.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\BatchOperation.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\BatchOperationParameterName.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\BatchOperations.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\BatchOperationType.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\BatchResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\DeleteEntityOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\EdmType.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\Entity.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\Filters\BinaryFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\Filters\ConstantFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\Filters\Filter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\Filters\PropertyNameFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\Filters\QueryStringFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\Filters\UnaryFilter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\GetEntityResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\GetTableResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\InsertEntityResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\Property.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\Query.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\QueryEntitiesOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\QueryEntitiesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\QueryTablesOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\QueryTablesResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\TableServiceOptions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\UpdateEntityResult.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\TableRestProxy.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\microsoft\windowsazure\WindowsAzure\WindowsAzure.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\Archive_Tar\Archive\Tar.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\Console_Getopt\Console\Getopt.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\HTTP_Request2\data\generate-list.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\HTTP_Request2\data\public-suffix-list.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2\Adapter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2\Adapter\Curl.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2\Adapter\Mock.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2\Adapter\Socket.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2\CookieJar.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2\Exception.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2\MultipartBody.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2\Observer\Log.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2\Response.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2\SocketWrapper.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2\SOCKS5.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\Mail_mimeDecode\Mail\mimeDecode.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\Mail_Mime\Mail\mime.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\Mail_Mime\Mail\mimePart.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\Net_URL2\Net\URL2.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\OS\Guess.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR5.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Autoloader.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Builder.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\ChannelFile.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\ChannelFile\Parser.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Auth.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Build.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Channels.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Common.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Config.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Install.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Mirror.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Package.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Pickle.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Registry.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Remote.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Test.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Common.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Config.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Dependency2.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\DependencyDB.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Downloader.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Downloader\Package.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\ErrorStack.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Exception.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\FixPHP5PEARWarnings.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Frontend.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Frontend\CLI.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Cfg.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Common.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Data.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Doc.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Ext.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Php.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Script.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Src.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Test.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Www.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\PackageFile.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\PackageFile\Generator\v1.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\PackageFile\Generator\v2.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\PackageFile\Parser\v1.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\PackageFile\Parser\v2.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\PackageFile\v1.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\PackageFile\v2.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\PackageFile\v2\rw.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\PackageFile\v2\Validator.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Packager.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Registry.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\REST.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\REST\10.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\REST\11.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\REST\13.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\RunTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Task\Common.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Task\Postinstallscript.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Task\Postinstallscript\rw.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Task\Replace.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Task\Replace\rw.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Task\Unixeol.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Task\Unixeol\rw.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Task\Windowseol.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Task\Windowseol\rw.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Validate.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Validator\PECL.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\XMLParser.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\scripts\pearcmd.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\scripts\peclcmd.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\PEAR\System.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\Structures_Graph\Structures\Graph.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\Structures_Graph\Structures\Graph\Manipulator\AcyclicTest.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\Structures_Graph\Structures\Graph\Manipulator\TopologicalSorter.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\Structures_Graph\Structures\Graph\Node.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\vendor\pear-pear.php.net\XML_Util\XML\Util.php">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="createAsset.php" />
     <Compile Include="debug.php" />
     <Compile Include="deliverStream.php" />
@@ -24,9 +1995,15 @@
     <Compile Include="encodeStatus.php" />
     <Compile Include="flowplayer.php" />
     <Compile Include="index.php" />
+    <Compile Include="init.php">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="phpinfo.php" />
     <Compile Include="README.md" />
     <Compile Include="uploadContent.php" />
+    <Compile Include="uploadLargeFile.php">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="upload_file\index.php">
       <SubType>Code</SubType>
     </Compile>
@@ -159,6 +2136,152 @@
   <ItemGroup>
     <Folder Include="bin" />
     <Folder Include="classes" />
+    <Folder Include="classes\vendor\" />
+    <Folder Include="classes\vendor\bin\" />
+    <Folder Include="classes\vendor\composer\" />
+    <Folder Include="classes\vendor\microsoft\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\hooks\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\info\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\logs\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\logs\refs\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\logs\refs\heads\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\logs\refs\remotes\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\logs\refs\remotes\composer\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\logs\refs\remotes\origin\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\objects\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\objects\info\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\objects\pack\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\refs\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\refs\heads\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\refs\remotes\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\refs\remotes\composer\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\refs\remotes\origin\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\refs\tags\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\build\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\examples\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\examples\Client\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\examples\tasklist\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\framework\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\functional\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Blob\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Queue\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\ServiceBus\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\Enums\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\functional\WindowsAzure\Table\Models\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\mock\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\mock\WindowsAzure\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\mock\WindowsAzure\Common\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\mock\WindowsAzure\Common\Internal\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\mock\WindowsAzure\Common\Internal\Authentication\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\mock\WindowsAzure\Common\Internal\Filters\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Blob\Models\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Atom\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Authentication\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Filters\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Http\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Internal\Serialization\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Common\Models\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Queue\Models\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\Internal\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceBus\models\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Internal\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceManagement\Models\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\ServiceRuntime\Internal\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Internal\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\tests\unit\WindowsAzure\Table\Models\Filters\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Internal\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Blob\Models\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Atom\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Authentication\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Filters\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Http\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Internal\Serialization\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Common\Models\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Internal\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Queue\Models\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Internal\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceBus\Models\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Internal\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceManagement\Models\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\ServiceRuntime\Internal\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Internal\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\WindowsAzure\Table\Models\Filters\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Archive_Tar\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Archive_Tar\Archive\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Console_Getopt\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Console_Getopt\Console\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\HTTP_Request2\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\HTTP_Request2\data\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2\Adapter\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\HTTP_Request2\HTTP\Request2\Observer\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Mail_mimeDecode\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Mail_mimeDecode\Mail\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Mail_Mime\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Mail_Mime\Mail\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Net_URL2\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Net_URL2\Net\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\bin\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\bin\scripts\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\data\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\data\PEAR\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\OS\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\ChannelFile\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Downloader\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Frontend\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\PackageFile\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\PackageFile\Generator\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\PackageFile\Parser\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\PackageFile\v2\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\REST\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Task\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Task\Postinstallscript\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Task\Replace\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Task\Unixeol\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Task\Windowseol\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Validator\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\PEAR\scripts\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Structures_Graph\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Structures_Graph\data\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Structures_Graph\data\Structures_Graph\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Structures_Graph\Structures\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Structures_Graph\Structures\Graph\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\Structures_Graph\Structures\Graph\Manipulator\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\XML_Util\" />
+    <Folder Include="classes\vendor\pear-pear.php.net\XML_Util\XML\" />
     <Folder Include="flowplayer" />
     <Folder Include=".git\branches" />
     <Folder Include=".git" />
@@ -240,6 +2363,240 @@
     <Folder Include="upload_file\upload\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="classes\composer.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\composer.phar">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\composer\installed.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.gitattributes">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.gitignore">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\config">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\description">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\FETCH_HEAD">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\HEAD">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\hooks\applypatch-msg.sample">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\hooks\commit-msg.sample">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\hooks\post-commit.sample">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\hooks\post-receive.sample">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\hooks\post-update.sample">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\hooks\pre-applypatch.sample">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\hooks\pre-commit.sample">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\hooks\pre-rebase.sample">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\hooks\prepare-commit-msg.sample">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\hooks\update.sample">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\index">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\info\exclude">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\logs\HEAD">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\logs\refs\heads\master">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\logs\refs\remotes\composer\dev">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\logs\refs\remotes\composer\master">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\logs\refs\remotes\origin\HEAD">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\objects\pack\pack-32aaed255ce65d5f2f140ab30d76e5313de7f20d.idx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\objects\pack\pack-32aaed255ce65d5f2f140ab30d76e5313de7f20d.pack">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\ORIG_HEAD">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\packed-refs">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\refs\heads\master">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\refs\remotes\composer\dev">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\refs\remotes\composer\master">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\refs\remotes\origin\HEAD">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\build.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\build\phpcs.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\build\phpmd.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\build\src_autoload.php.in">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\build\tests_autoload.php.in">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\changelog.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\composer.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\examples\README.markdown">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\examples\tasklist\README.markdown">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\LICENSE.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\package.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\phpdoc.dist.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\phpunit.functional.xml.dist">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\phpunit.xml.dist">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\bin\scripts\pear.bat">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\bin\scripts\pear.sh">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\bin\scripts\peardev.bat">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\bin\scripts\peardev.sh">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\bin\scripts\pecl.bat">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\bin\scripts\pecl.sh">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\data\PEAR\package.dtd">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\data\PEAR\template.spec">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Auth.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Build.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Channels.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Config.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Install.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Mirror.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Package.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Pickle.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Registry.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Remote.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Command\Test.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Cfg.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Data.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Doc.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Ext.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Php.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Script.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Src.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Test.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\PEAR\PEAR\Installer\Role\Www.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\pear-pear.php.net\Structures_Graph\data\Structures_Graph\LICENSE">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="upload_file\ajax_upload.js">
       <SubType>Content</SubType>
     </Content>
