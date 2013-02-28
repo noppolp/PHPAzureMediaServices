@@ -8,6 +8,11 @@
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
     <IISProjectUrl>http://localhost:48534/</IISProjectUrl>
+    <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+    <Server>Custom</Server>
+    <CustomServerUrl>http://localhost:8048/</CustomServerUrl>
+    <PHPDevAutoPort>True</PHPDevAutoPort>
+    <PHPDevPort>18994</PHPDevPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -17,6 +22,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include=".user.ini" />
+    <Compile Include="ajaxupload\FileUploadModel.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ajaxupload\PrepareMetadata.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ajaxupload\UploadBlock.php">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="classes\vendor\autoload.php">
       <SubType>Code</SubType>
     </Compile>
@@ -1988,26 +2002,32 @@
     <Compile Include="classes\vendor\pear-pear.php.net\XML_Util\XML\Util.php">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="config.php">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="createAsset.php" />
     <Compile Include="debug.php" />
     <Compile Include="deliverStream.php" />
     <Compile Include="encode.php" />
     <Compile Include="encodeStatus.php" />
     <Compile Include="flowplayer.php" />
+    <Compile Include="html5upload.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="html5uploadForm.php">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="index.php" />
     <Compile Include="init.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="initStorage.php">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="phpinfo.php" />
     <Compile Include="README.md" />
     <Compile Include="uploadContent.php" />
     <Compile Include="uploadLargeFile.php">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="upload_file\index.php">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="upload_file\upload.php">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Web.config" />
@@ -2140,8 +2160,11 @@
     <Folder Include="classes\vendor\bin\" />
     <Folder Include="classes\vendor\composer\" />
     <Folder Include="classes\vendor\microsoft\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure" />
     <Folder Include="classes\vendor\microsoft\windowsazure\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git" />
     <Folder Include="classes\vendor\microsoft\windowsazure\.git\" />
+    <Folder Include="classes\vendor\microsoft\windowsazure\.git\hooks" />
     <Folder Include="classes\vendor\microsoft\windowsazure\.git\hooks\" />
     <Folder Include="classes\vendor\microsoft\windowsazure\.git\info\" />
     <Folder Include="classes\vendor\microsoft\windowsazure\.git\logs\" />
@@ -2359,8 +2382,8 @@
     <Folder Include=".git\refs\remotes\origin" />
     <Folder Include="flowplayer\skin" />
     <Folder Include="flowplayer\skin\img" />
-    <Folder Include="upload_file\" />
-    <Folder Include="upload_file\upload\" />
+    <Folder Include="js" />
+    <Folder Include="ajaxupload" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="classes\composer.json">
@@ -2381,10 +2404,22 @@
     <Content Include="classes\vendor\microsoft\windowsazure\.git\config">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\config">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\description">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="classes\vendor\microsoft\windowsazure\.git\description">
       <SubType>Content</SubType>
     </Content>
     <Content Include="classes\vendor\microsoft\windowsazure\.git\FETCH_HEAD">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\FETCH_HEAD">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="classes\vendor\microsoft\windowsazure\.git\HEAD">
       <SubType>Content</SubType>
     </Content>
     <Content Include="classes\vendor\microsoft\windowsazure\.git\HEAD">
@@ -2597,13 +2632,10 @@
     <Content Include="classes\vendor\pear-pear.php.net\Structures_Graph\data\Structures_Graph\LICENSE">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="upload_file\ajax_upload.js">
+    <Content Include="js\BlockBlobUpload.js">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="upload_file\jquery-1.6.3.min.js">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="upload_file\upload\sample.txt">
+    <Content Include="js\jquery-1.5.1.min.js">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

@@ -7,10 +7,12 @@
 <?php
 use WindowsAzure\Blob\Models\Block;
 use WindowsAzure\Blob\Models\BlockList;
+use WindowsAzure\Blob\Models\CreateBlobOptions;
 
 if (!empty($_POST)){
 	if(is_uploaded_file($_FILES['blobfile']['tmp_name'])){
         require_once 'init.php';
+        require_once 'initStorage.php';
         set_time_limit(0);
         $assetId = $_POST['AssetIdTextBox'];
         $asset = $mediaContext->getAssetReference($assetId);

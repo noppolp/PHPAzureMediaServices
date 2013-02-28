@@ -2,5 +2,7 @@
   <PropertyGroup>
     <StartAction>SpecificPage</StartAction>
     <SpecificPageValue>index.php</SpecificPageValue>
+    <StartUrlValue>
+    </StartUrlValue>
   </PropertyGroup>
 </Project>
