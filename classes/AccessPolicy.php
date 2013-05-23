@@ -43,6 +43,12 @@ class AccessPolicy{
                 $this->name = $object->d->Name;
                 $this->created = Utility::DotNetJSONDateToTime($object->d->Created);
                 $this->lastModified = Utility::DotNetJSONDateToTime($object->d->LastModified);
+            }else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    $this->Create();
+                }
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
@@ -60,9 +66,16 @@ class AccessPolicy{
                         RequestHeaders::$Authorization => sprintf(RequestHeadersValues::$Authorization, $this->context->getAccessToken())));
         try{
             $r->send();
-            if($r->getResponseCode() != 204){
+            if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    $this->Delete();
+                }
+            }else if($r->getResponseCode() != 204){
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
+            
         }catch(HttpException $ex){
             echo $ex;
         }
@@ -86,6 +99,12 @@ class AccessPolicy{
                 $this->name = $object->d->Name;
                 $this->created = Utility::DotNetJSONDateToTime($object->d->Created);
                 $this->lastModified = Utility::DotNetJSONDateToTime($object->d->LastModified);
+            }else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    $this->Get();
+                }
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }

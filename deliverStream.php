@@ -4,20 +4,21 @@
 </form>
 <?php
 require_once '/classes/MediaServiceContext.php';
+require_once 'init.php';
 
-$accountName = 'noppolmedia';
-$accountKey = 'qhWqMa04+fQcI9MI4iGKiUph7m/LKus9EJwUHq6tNFk=';
-$storageAccountName = 'noppolpstorage';
-$storageAccountKey = 'LJuxLFsD9/4igqJvLQkYDerYQImZVG6KCdigRwwczWrRbQBvaQuw9rziahn3QXhrTjixXZ7CpRTMO8zq18BmTg==';
-$mediaContext = new MediaServiceContext($accountName, $accountKey, $storageAccountName, $storageAccountKey);
-$mediaContext->checkForRedirection();
+//$accountName = 'noppolmedia';
+//$accountKey = 'qhWqMa04+fQcI9MI4iGKiUph7m/LKus9EJwUHq6tNFk=';
+//$storageAccountName = 'noppolpstorage';
+//$storageAccountKey = 'LJuxLFsD9/4igqJvLQkYDerYQImZVG6KCdigRwwczWrRbQBvaQuw9rziahn3QXhrTjixXZ7CpRTMO8zq18BmTg==';
+//$mediaContext = new MediaServiceContext($accountName, $accountKey, $storageAccountName, $storageAccountKey);
+//$mediaContext->checkForRedirection();
 
 if (!empty($_POST)){
     $assetId = $_POST['AssetIdTextBox'];
     
     $accessPolicy = $mediaContext->getAccessPolicyReference();
     $accessPolicy->name = 'Stream AC';
-    $accessPolicy->durationInMinutes = 3000;
+    $accessPolicy->durationInMinutes = 30000;
     $accessPolicy->permissions = AccessPolicyPermission::$READ;
     $accessPolicy->Create();
     $asset = $mediaContext->getAssetReference($assetId);

@@ -52,7 +52,13 @@ class Asset{
 				$this->alternateId = $object->d->AlternateId;
 				$this->created = Utility::DotNetJSONDateToTime($object->d->Created);
 				$this->lastModified = Utility::DotNetJSONDateToTime($object->d->LastModified);
-			}else{
+			}else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    $this->Create();
+                }
+            }else{
 				echo $r->getResponseCode() . ' ' . $r->getResponseBody();
 			}
 		}
@@ -70,7 +76,13 @@ class Asset{
 						RequestHeaders::$Authorization => sprintf(RequestHeadersValues::$Authorization, $this->context->getAccessToken())));
 		try{
 			$r->send();
-			if($r->getResponseCode() != 204){
+            if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    $this->Delete();
+                }
+            }else if($r->getResponseCode() != 204){
 				echo $r->getResponseCode() . ' ' . $r->getResponseBody();
 			}
 		}
@@ -94,7 +106,13 @@ class Asset{
 		$r->setBody($requestBody);
 		try{
 			$r->send();
-			if($r->getResponseCode() != 204){
+            if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    $this->Update();
+                }
+            }else if($r->getResponseCode() != 204){
 				echo $r->getResponseCode() . ' ' . $r->getResponseBody();
 			}
 		}
@@ -114,7 +132,13 @@ class Asset{
 						RequestHeaders::$Accept => RequestContentType::$JSON));
 		try{
 			$r->send();
-			if($r->getResponseCode() != 204){
+            if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    $this->Publish();
+                }
+            }else if($r->getResponseCode() != 204){
 				echo $r->getResponseCode() . ' ' . $r->getResponseBody();
 			}
 		}
@@ -143,7 +167,13 @@ class Asset{
 				$this->alternateId = $object->d->AlternateId;
 				$this->created = Utility::DotNetJSONDateToTime($object->d->Created);
 				$this->lastModified = Utility::DotNetJSONDateToTime($object->d->LastModified);
-			}else{
+			}else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    $this->Get();
+                }
+            }else{
 				echo $r->getResponseCode() . ' ' . $r->getResponseBody();
 			}
 		}
@@ -180,7 +210,13 @@ class Asset{
 					$locator->startTime = Utility::DotNetJSONDateToTime($object['StartTime']);
 					$locators[$i++] = $locator;
 				}
-			}else{
+			}else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    return $this->ListLocators();
+                }
+            }else{
 				echo $r->getResponseCode() . ' ' . $r->getResponseBody();
 			}
 		}
@@ -246,7 +282,13 @@ class Asset{
 					$assetFile->lastModified = Utility::DotNetJSONDateToTime($object['LastModified']);
 					$assetFiles[$i++] = $assetFile;
 				}
-			}else{
+			}else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    return $this->ListAssetFiles();
+                }
+            }else{
 				echo $r->getResponseCode() . ' ' . $r->getResponseBody();
 			}
 		}

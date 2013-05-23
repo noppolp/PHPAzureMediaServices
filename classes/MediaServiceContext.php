@@ -12,7 +12,7 @@ class MediaServiceContext{
     private $acsEndpoint = 'https://wamsprodglobal001acs.accesscontrol.windows.net/v2/OAuth2-13';
     private $accountName;
     private $accountKey;
-    private $accessToken;
+    public $accessToken;
     private $accessTokenExpiry;
     public $wamsEndpoint = 'https://media.windows.net/API/';
     private $storageConnStr;
@@ -103,6 +103,13 @@ class MediaServiceContext{
                     $asset->name = $object['Name'];
                     $assets[$i++] = $asset;  
                 }
+            }else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->wamsEndpoint = $newLocation;
+                    $this->accessToken = null;
+                    return $this->ListAssets();
+                }
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
@@ -140,6 +147,13 @@ class MediaServiceContext{
                     $accessPolicy->lastModified = Utility::DotNetJSONDateToTime($object['LastModified']);
                     $accessPolicy->name = $object['Name'];
                     $accessPolicies[$i++] = $accessPolicy;
+                }
+            }else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->wamsEndpoint = $newLocation;
+                    $this->accessToken = null;
+                    return $this->ListAccessPolicies();
                 }
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
@@ -182,6 +196,13 @@ class MediaServiceContext{
                     $locator->startTime = Utility::DotNetJSONDateToTime($object['StartTime']);
                     $locators[$i++] = $locator;
                 }
+            }else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->wamsEndpoint = $newLocation;
+                    $this->accessToken = null;
+                    return $this->ListLocators();
+                }
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
@@ -218,6 +239,13 @@ class MediaServiceContext{
                     $mediaProcessor->vendor = $object['Vendor'];
                     $mediaProcessor->version = $object['Version'];
                     $mediaProcessors[$i++] = $mediaProcessor;
+                }
+            }else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->wamsEndpoint = $newLocation;
+                    $this->accessToken = null;
+                    return $this->ListMediaProcessors();
                 }
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();

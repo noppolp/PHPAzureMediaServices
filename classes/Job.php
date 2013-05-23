@@ -62,6 +62,12 @@ class Job{
                 $this->startTime = Utility::DotNetJSONDateToTime($object->d->StartTime);
                 $this->state = $object->d->State;
                 $this->templateId = $object->d->TemplateId;
+            }else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    $this->Submit();
+                }
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
@@ -92,6 +98,12 @@ class Job{
                 $this->startTime = Utility::DotNetJSONDateToTime($object->d->StartTime);
                 $this->state = $object->d->State;
                 $this->templateId = $object->d->TemplateId;
+            }else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    $this->Get();
+                }
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
@@ -101,11 +113,11 @@ class Job{
     }
     
     public function GetState(){
-        //TODO
+        //TODO: Get Job's State
     }
     
     public function Cancel(){
-        //TODO
+        //TODO: Cancel Job
     }
     
     public function ListTasks(){
@@ -128,8 +140,14 @@ class Job{
                     $task->id = $object['Id'];
                     $task->name = $object['Name'];
                     $task->progress = $object['Progress'];
-                    //TODO
+                    //TODO: Add More Task Properties
                     $tasks[$i++] = $task;
+                }
+            }else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    return $this->ListTasks();
                 }
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
@@ -160,6 +178,12 @@ class Job{
                     $asset->id = $object['Id'];
                     //TODO
                     $assets[$i++] = $asset;
+                }
+            }else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    return $this->ListOutputAssets();
                 }
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();

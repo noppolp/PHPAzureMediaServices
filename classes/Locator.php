@@ -50,6 +50,12 @@ class Locator{
                 $this->accessPolicyId = $object->d->AccessPolicyId;
                 $this->assetId = $object->d->AssetId;
                 $this->startTime = Utility::DotNetJSONDateToTime($object->d->StartTime);
+            }else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    $this->Create();
+                }
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
@@ -67,7 +73,13 @@ class Locator{
                         RequestHeaders::$Authorization => sprintf(RequestHeadersValues::$Authorization, $this->context->getAccessToken())));
         try{
             $r->send();
-            if($r->getResponseCode() != 204){
+            if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    $this->Delete();
+                }
+            }else if($r->getResponseCode() != 204){
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
         }catch(HttpException $ex){
@@ -96,6 +108,12 @@ class Locator{
                 $this->accessPolicyId = $object->d->AccessPolicyId;
                 $this->assetId = $object->d->AssetId;
                 $this->startTime = Utility::DotNetJSONDateToTime($object->d->StartTime);
+            }else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    $this->Get();
+                }
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }

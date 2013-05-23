@@ -32,7 +32,7 @@ class Utility{
     }
     
     public static function GetFileUrl($locatorPath, $filename){
-        return substr_replace($locatorPath, '/' . $filename, strpos($locatorPath, '?st='), 0);
+        return substr_replace($locatorPath, '/' . $filename, strpos($locatorPath, parse_url($locatorPath, PHP_URL_QUERY)) - 1, 0);
     }
 }
 

@@ -48,6 +48,12 @@ class AssetFile{
                 $this->lastModified = Utility::DotNetJSONDateToTime($object->d->LastModified);
                 $this->mimeType = $object->d->MimeType;
                 $this->contentChecksum = $object->d->ContentChecksum;
+            }else if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    $this->Get();
+                }
             }else{
                 echo $r->getResponseCode() . ' ' . $r->getResponseBody();
             }
