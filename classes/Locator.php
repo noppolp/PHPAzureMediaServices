@@ -52,7 +52,7 @@ class Locator{
                 $this->startTime = Utility::DotNetJSONDateToTime($object->d->StartTime);
             }else if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     $this->Create();
                 }
@@ -75,7 +75,7 @@ class Locator{
             $r->send();
             if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     $this->Delete();
                 }
@@ -110,7 +110,7 @@ class Locator{
                 $this->startTime = Utility::DotNetJSONDateToTime($object->d->StartTime);
             }else if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     $this->Get();
                 }

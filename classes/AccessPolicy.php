@@ -45,7 +45,7 @@ class AccessPolicy{
                 $this->lastModified = Utility::DotNetJSONDateToTime($object->d->LastModified);
             }else if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     $this->Create();
                 }
@@ -68,7 +68,7 @@ class AccessPolicy{
             $r->send();
             if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     $this->Delete();
                 }
@@ -101,7 +101,7 @@ class AccessPolicy{
                 $this->lastModified = Utility::DotNetJSONDateToTime($object->d->LastModified);
             }else if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     $this->Get();
                 }

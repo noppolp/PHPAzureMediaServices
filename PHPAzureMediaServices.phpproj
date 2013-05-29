@@ -2131,27 +2131,6 @@
     <Compile Include="classes\Task.php" />
     <Compile Include="classes\TaskHistoricalEvent.php" />
     <Compile Include="classes\Utility.php" />
-    <Compile Include="flowplayer\flowplayer.js" />
-    <Compile Include="flowplayer\flowplayer.min.js" />
-    <Compile Include="flowplayer\flowplayer.swf" />
-    <Compile Include="flowplayer\index.php" />
-    <Compile Include="flowplayer\LICENSE.md" />
-    <Compile Include="flowplayer\skin\all-skins.css" />
-    <Compile Include="flowplayer\skin\functional.css" />
-    <Compile Include="flowplayer\skin\minimalist.css" />
-    <Compile Include="flowplayer\skin\playful.css" />
-    <Compile Include="flowplayer\skin\img\black.png" />
-    <Compile Include="flowplayer\skin\img\black@x2.png" />
-    <Compile Include="flowplayer\skin\img\playful_black.png" />
-    <Compile Include="flowplayer\skin\img\playful_black@x2.png" />
-    <Compile Include="flowplayer\skin\img\playful_white.png" />
-    <Compile Include="flowplayer\skin\img\playful_white@x2.png" />
-    <Compile Include="flowplayer\skin\img\play_black.png" />
-    <Compile Include="flowplayer\skin\img\play_black@x2.png" />
-    <Compile Include="flowplayer\skin\img\play_white.png" />
-    <Compile Include="flowplayer\skin\img\play_white@x2.png" />
-    <Compile Include="flowplayer\skin\img\white.png" />
-    <Compile Include="flowplayer\skin\img\white@x2.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin" />
@@ -2305,7 +2284,6 @@
     <Folder Include="classes\vendor\pear-pear.php.net\Structures_Graph\Structures\Graph\Manipulator\" />
     <Folder Include="classes\vendor\pear-pear.php.net\XML_Util\" />
     <Folder Include="classes\vendor\pear-pear.php.net\XML_Util\XML\" />
-    <Folder Include="flowplayer" />
     <Folder Include=".git\branches" />
     <Folder Include=".git" />
     <Folder Include=".git\hooks" />
@@ -2380,6 +2358,7 @@
     <Folder Include=".git\refs\remotes" />
     <Folder Include=".git\refs\tags" />
     <Folder Include=".git\refs\remotes\origin" />
+    <Folder Include="flowplayer" />
     <Folder Include="flowplayer\skin" />
     <Folder Include="flowplayer\skin\img" />
     <Folder Include="js" />
@@ -2630,6 +2609,108 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="classes\vendor\pear-pear.php.net\Structures_Graph\data\Structures_Graph\LICENSE">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\embed.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\flowplayer.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\flowplayer.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\flowplayer.swf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\index.php">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\LICENSE.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\all-skins.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\functional.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\black%40x2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\black.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\black_rtl%40x2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\black_rtl.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\playful_black%40x2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\playful_black.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\playful_black_rtl%40x2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\playful_black_rtl.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\playful_white%40x2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\playful_white.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\playful_white_rtl%40x2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\playful_white_rtl.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\play_black%40x2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\play_black.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\play_black_rtl%40x2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\play_black_rtl.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\play_white%40x2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\play_white.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\play_white_rtl%40x2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\play_white_rtl.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\white%40x2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\white.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\white_rtl%40x2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\img\white_rtl.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\minimalist.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="flowplayer\skin\playful.css">
       <SubType>Content</SubType>
     </Content>
     <Content Include="js\BlockBlobUpload.js">

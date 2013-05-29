@@ -54,7 +54,7 @@ class Asset{
 				$this->lastModified = Utility::DotNetJSONDateToTime($object->d->LastModified);
 			}else if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     $this->Create();
                 }
@@ -78,7 +78,7 @@ class Asset{
 			$r->send();
             if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     $this->Delete();
                 }
@@ -108,7 +108,7 @@ class Asset{
 			$r->send();
             if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     $this->Update();
                 }
@@ -134,7 +134,7 @@ class Asset{
 			$r->send();
             if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     $this->Publish();
                 }
@@ -169,7 +169,7 @@ class Asset{
 				$this->lastModified = Utility::DotNetJSONDateToTime($object->d->LastModified);
 			}else if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     $this->Get();
                 }
@@ -212,7 +212,7 @@ class Asset{
 				}
 			}else if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     return $this->ListLocators();
                 }
@@ -284,7 +284,7 @@ class Asset{
 				}
 			}else if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     return $this->ListAssetFiles();
                 }

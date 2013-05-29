@@ -50,7 +50,7 @@ class AssetFile{
                 $this->contentChecksum = $object->d->ContentChecksum;
             }else if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     $this->Get();
                 }

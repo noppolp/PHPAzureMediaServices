@@ -64,7 +64,7 @@ class Job{
                 $this->templateId = $object->d->TemplateId;
             }else if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     $this->Submit();
                 }
@@ -100,7 +100,7 @@ class Job{
                 $this->templateId = $object->d->TemplateId;
             }else if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     $this->Get();
                 }
@@ -145,7 +145,7 @@ class Job{
                 }
             }else if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     return $this->ListTasks();
                 }
@@ -181,7 +181,7 @@ class Job{
                 }
             }else if($r->getResponseCode() == 301){
                 $newLocation = $r->getResponseHeader('Location');
-                if($newLocation != $this->wamsEndpoint){
+                if($newLocation != $this->context->wamsEndpoint){
                     $this->context->wamsEndpoint = $newLocation;
                     return $this->ListOutputAssets();
                 }
