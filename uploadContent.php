@@ -7,12 +7,7 @@
 require_once '/classes/MediaServiceContext.php';
 require_once 'init.php';
 
-//$accountName = 'noppolmedia';
-//$accountKey = 'qhWqMa04+fQcI9MI4iGKiUph7m/LKus9EJwUHq6tNFk=';
-//$storageAccountName = 'noppolpstorage';
-//$storageAccountKey = 'LJuxLFsD9/4igqJvLQkYDerYQImZVG6KCdigRwwczWrRbQBvaQuw9rziahn3QXhrTjixXZ7CpRTMO8zq18BmTg==';
-//$mediaContext = new MediaServiceContext($accountName, $accountKey, $storageAccountName, $storageAccountKey);
-//$mediaContext->checkForRedirection();
+date_default_timezone_set("GMT");
 
 if (!empty($_POST)){
     if(is_uploaded_file($_FILES['blobfile']['tmp_name'])){

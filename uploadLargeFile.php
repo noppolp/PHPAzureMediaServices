@@ -9,6 +9,8 @@ use WindowsAzure\Blob\Models\Block;
 use WindowsAzure\Blob\Models\BlockList;
 use WindowsAzure\Blob\Models\CreateBlobOptions;
 
+date_default_timezone_set("GMT");
+
 if (!empty($_POST)){
 	if(is_uploaded_file($_FILES['blobfile']['tmp_name'])){
         require_once 'init.php';

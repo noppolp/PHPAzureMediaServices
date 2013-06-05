@@ -28,6 +28,9 @@
     <Compile Include="ajaxupload\PrepareMetadata.php">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ajaxupload\PublishAsset.php">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ajaxupload\UploadBlock.php">
       <SubType>Code</SubType>
     </Compile>
@@ -2007,6 +2010,9 @@
     </Compile>
     <Compile Include="createAsset.php" />
     <Compile Include="debug.php" />
+    <Compile Include="deleteAsset.php">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="deliverStream.php" />
     <Compile Include="encode.php" />
     <Compile Include="encodeStatus.php" />
@@ -2024,8 +2030,17 @@
     <Compile Include="initStorage.php">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="listAssetFile.php">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="phpinfo.php" />
     <Compile Include="README.md" />
+    <Compile Include="silverlightUpload.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="silverlightUploadForm.php">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="uploadContent.php" />
     <Compile Include="uploadLargeFile.php">
       <SubType>Code</SubType>
@@ -2363,6 +2378,7 @@
     <Folder Include="flowplayer\skin\img" />
     <Folder Include="js" />
     <Folder Include="ajaxupload" />
+    <Folder Include="silverlight\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="classes\composer.json">
@@ -2611,6 +2627,9 @@
     <Content Include="classes\vendor\pear-pear.php.net\Structures_Graph\data\Structures_Graph\LICENSE">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="clientaccesspolicy.xml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="flowplayer\embed.min.js">
       <SubType>Content</SubType>
     </Content>
@@ -2717,6 +2736,15 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="js\jquery-1.5.1.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="silverlight\BlobUploadControl.xap">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="silverlight\System.ComponentModel.DataAnnotations.zip">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="silverlight\System.Windows.Controls.Data.Input.zip">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

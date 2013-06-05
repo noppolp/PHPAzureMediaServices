@@ -238,7 +238,13 @@ class Asset{
 		$r->setPutFile($tmp_name);
 		try{
 			$r->send();
-			if($r->getResponseCode() != 201){
+            if($r->getResponseCode() == 301){
+                $newLocation = $r->getResponseHeader('Location');
+                if($newLocation != $this->context->wamsEndpoint){
+                    $this->context->wamsEndpoint = $newLocation;
+                    return $this->UploadContent($file_name, $tmp_name);
+                }
+            }else if($r->getResponseCode() != 201){
 				echo $r->getResponseCode() . ' ' . $r->getResponseBody();
 			}
 		}
@@ -317,6 +323,26 @@ class Asset{
 			return $newUri;
 		}
 	}
+    
+    public function GetWriteAccessPath($durationInMinutes){
+        date_default_timezone_set("GMT");
+        $this->DeleteWriteAccessPolicy();
+		$accessPolicy = $this->context->getAccessPolicyReference();
+		$accessPolicy->name = 'uploadpolicy';
+		$accessPolicy->durationInMinutes = $durationInMinutes;
+		$accessPolicy->permissions = AccessPolicyPermission::$WRITE;
+		$accessPolicy->Create();
+
+		$locator = $this->context->getLocatorReference();
+		$locator->assetId = $this->id;
+		$locator->accessPolicyId = $accessPolicy->id;
+		$locator->startTime = time() - (5 * 60);
+		$locator->type = LocatorType::$SAS;
+		$locator->Create();
+		if($locator){
+			return $locator->path;
+		}
+    }
 	
     public function GetReadAccessUri(){
         $locs = $this->ListLocators();
